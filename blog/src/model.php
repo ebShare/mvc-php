@@ -32,6 +32,7 @@ function getPost($identifier) {
         'title' => $row['title'],
         'french_creation_date' => $row['french_creation_date'],
         'content' => $row['content'],
+        'identifier'=>$row['id'],
     ];
 
     return $post;
