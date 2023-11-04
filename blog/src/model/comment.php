@@ -26,11 +26,6 @@ function createComment (string $post, string $author, string $comment){
 }
 
 function commentDbConnect(){
-    try{
-        $database= new PDO('mysql:host=localhost;dbname=root;charset=root','blog','password');
-        return $database;
-    }
-    catch(Exception $e){
-        die('Erreur :'. $e->getMessage());
-    }
+    $database= new PDO('mysql:host=localhost;dbname=root;charset=root','blog','password');
+    return $database;
 }
