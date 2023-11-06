@@ -1,6 +1,10 @@
 <?php
+
 require_once('src/model.php');
-function homepage(){
+
+function homepage()
+{
     $posts = getPosts();
+
     require('templates/homepage.php');
 }
