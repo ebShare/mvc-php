@@ -1,4 +1,6 @@
 <?php
+
+namespace Application\lib\database;
 class DatabaseConnection{
     public ?PDO $database = null;
     public function getConnection():PDO{

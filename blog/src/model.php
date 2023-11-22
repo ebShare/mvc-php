@@ -1,6 +1,6 @@
 <?php
 // src/model.php
-
+namespace Application\Model;
 function getPosts() {
 	$database = dbConnect();
 	$statement = $database->query(
